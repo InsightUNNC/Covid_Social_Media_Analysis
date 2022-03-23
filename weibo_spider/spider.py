@@ -204,7 +204,7 @@ class NewSuperWeiboTimelineTopicSpider(object):
                       'forward_num': forward_num,
                       'comment_num': comment_num,
                       'like_num': like_num}
-            # print(publish_time, mid, user_name, user_link, content.encode('GBK', 'ignore').decode('GBK'), image_urls, weibo_link, forward_num, comment_num, like_num)
+            print(publish_time, mid, user_name, user_link, content.encode('GBK', 'ignore').decode('GBK'), image_urls, weibo_link, forward_num, comment_num, like_num)
             yield aweibo
 
     def write_csv(self):
